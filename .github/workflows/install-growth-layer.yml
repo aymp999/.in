@@ -1,11 +1,11 @@
-name: Install AYMP Growth Layer
+name: Install AYMP Growth Layer (Audit Only)
 
 on:
   push:
     branches: [main]
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   install-growth-layer:
@@ -17,82 +17,27 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Ensure AYMP growth layers are loaded and clean the homepage
+      - name: Audit homepage growth layers without publishing changes
         shell: bash
         run: |
           python3 - <<'PY'
           from pathlib import Path
-          import re
           p = Path('index.html')
           text = p.read_text(encoding='utf-8')
-          layers = [
-            ('AYMP-GROWTH-LAYER','assets/js/aymp-growth.js?v=6'),
-            ('AYMP-DAILY-DISCOVERY-IMAGES','assets/js/aymp-daily-discovery-images.js?v=2'),
-            ('AYMP-LIVE-GLOBAL-UPGRADE','assets/js/aymp-live-global-upgrade.js?v=2'),
-            ('AYMP-GAME-ZONE-ENTRY','assets/js/aymp-game-entry.js?v=1'),
-            ('AYMP-DISCOVERY-WORLD','assets/js/aymp-discovery-world.js?v=1'),
-            ('AYMP-TOKEN-ECONOMY','assets/js/aymp-token-economy.js?v=1'),
-            ('AYMP-AUTO-GLOBAL-SHARING','assets/js/aymp-auto-global-sharing-v1.js?v=1'),
-            ('AYMP-COSMIC-OPENING','assets/js/aymp-cosmic-opening.js?v=1'),
+          markers = [
+            'AYMP-GROWTH-LAYER',
+            'AYMP-DAILY-DISCOVERY-IMAGES',
+            'AYMP-LIVE-GLOBAL-UPGRADE',
+            'AYMP-GAME-ZONE-ENTRY',
+            'AYMP-DISCOVERY-WORLD',
+            'AYMP-TOKEN-ECONOMY',
+            'AYMP-AUTO-GLOBAL-SHARING',
+            'AYMP-COSMIC-OPENING',
           ]
-
-          # Remove managed layer tags, including the old homepage-only daily content layer.
-          old = ('AYMP-GLOBAL-DAILY-CONTENT','assets/js/aymp-global-daily-content.js')
-          text = re.sub(r'\s*<!-- '+re.escape(old[0])+r' -->\s*<script src="'+re.escape(old[1])+r'\?v=[^"]+"></script>', '', text)
-          for marker, src in layers:
-            text = re.sub(r'\s*<!-- '+re.escape(marker)+r' -->\s*<script src="'+re.escape(src.split('?')[0])+r'\?v=[^"]+"></script>', '', text)
-
-          # Repair the two malformed horoscope anchors without changing their destination or visible text.
-          text = text.replace('<a class="btn" <a href="daily-horoscope.html" class="gold-button">', '<a class="btn" href="daily-horoscope.html">')
-          text = text.replace('<a class="btn" <a href="weekly-horoscope.html" class="gold-button">', '<a class="btn" href="weekly-horoscope.html">')
-
-          # Consolidate the three existing Sacred Products sections into one section.
-          # This is intentionally conservative: it runs only when exactly three simple
-          # product sections are contiguous and each contains one card.
-          product_pattern = re.compile(
-              r'<section>\s*<div class="container">\s*'
-              r'<h2 class="section-title">Our Sacred Products</h2>\s*'
-              r'<div class="cards">\s*(<div class="card">.*?</div>)\s*'
-              r'</div>\s*</div>\s*</section>',
-              re.S,
-          )
-          matches = list(product_pattern.finditer(text))
-          if len(matches) == 3:
-            gaps_clean = all(not text[matches[i].end():matches[i+1].start()].strip() for i in range(2))
-            if gaps_clean:
-              cards = '\n\n'.join(m.group(1) for m in matches)
-              consolidated = (
-                  '<section>\n'
-                  '  <div class="container">\n\n'
-                  '    <h2 class="section-title">Our Sacred Products</h2>\n\n'
-                  '    <div class="cards">\n\n'
-                  f'{cards}\n\n'
-                  '    </div>\n\n'
-                  '  </div>\n'
-                  '</section>'
-              )
-              text = text[:matches[0].start()] + consolidated + text[matches[-1].end():]
-              print('Consolidated 3 Sacred Products sections into 1 section while preserving all 3 product cards.')
+          missing = [m for m in markers if ('<!-- ' + m + ' -->') not in text]
+          if missing:
+              print('Homepage audit: missing managed layer markers: ' + ', '.join(missing))
           else:
-            print(f'Sacred Products consolidation skipped safely: found {len(matches)} matching sections.')
-
-          tags = ''.join('\n  <!-- '+m+' -->\n  <script src="'+src+'"></script>\n' for m,src in layers)
-          if '</body>' in text:
-            text = text.replace('</body>', tags + '</body>', 1)
-          p.write_text(text, encoding='utf-8')
+              print('Homepage audit: all managed growth layer markers are present.')
+          print('AUDIT ONLY: this workflow never writes or pushes index.html.')
           PY
-
-      - name: Commit and push homepage integration
-        shell: bash
-        run: |
-          if git diff --quiet -- index.html; then
-            echo "AYMP layers already installed and homepage needs no repair."
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@github.com"
-          git add index.html
-          git commit -m "Consolidate duplicate homepage product sections"
-          git fetch origin main
-          git rebase origin/main
-          git push origin HEAD:main

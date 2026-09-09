@@ -28,17 +28,19 @@ jobs:
         run: python3 automation/aymp_daily_engine.py
 
       - name: Security guard — allow-list and secret scan
+        env:
+          AYMP_AUTOMATION_DISABLED: ${{ vars.AYMP_AUTOMATION_DISABLED || 'false' }}
         run: python3 automation/security_guard.py
 
-      - name: Commit daily state only
+      - name: Commit daily state and growth drafts only
         shell: bash
         run: |
-          if git diff --quiet -- data/aymp-daily-state.json automation/AYMP-AUTO-STATUS.md; then
-            echo "No daily state changes."
+          if git diff --quiet -- data/aymp-daily-state.json automation/AYMP-AUTO-STATUS.md data/aymp-growth-drafts.json automation/AYMP-GROWTH-PLAN.md; then
+            echo "No daily state or growth draft changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@github.com"
-          git add data/aymp-daily-state.json automation/AYMP-AUTO-STATUS.md
-          git commit -m "Update AYMP daily automation state"
+          git add data/aymp-daily-state.json automation/AYMP-AUTO-STATUS.md data/aymp-growth-drafts.json automation/AYMP-GROWTH-PLAN.md
+          git commit -m "Update AYMP daily growth draft state"
           git push origin HEAD:main
