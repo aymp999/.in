@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-09-10T06:59:14.604300+05:30",
+  "timezone": "Asia/Kolkata",
+  "engine_version": "1.1-growth-draft",
+  "day_of_year": 253,
+  "zodiac_day": "Day3",
+  "zodiac_database": {
+    "path": "data/all_zodiac_v1.json",
+    "sign_count": 12,
+    "status": "read_only"
+  },
+  "pages": {
+    "zodiac": {
+      "path": "daily-horoscope.html",
+      "exists": true
+    },
+    "guidance": {
+      "path": "guides.html",
+      "exists": true
+    },
+    "wellness": {
+      "path": "fertility-family-wellness-guide.html",
+      "exists": true
+    },
+    "global_trending": {
+      "path": "global-trending.html",
+      "exists": true
+    },
+    "food": {
+      "path": "food-discovery.html",
+      "exists": true
+    },
+    "ask_aymp": {
+      "path": "ask-aymp.html",
+      "exists": true
+    },
+    "game": {
+      "path": "game-zone.html",
+      "exists": true
+    }
+  },
+  "latest_youtube": {
+    "status": "ok",
+    "title": "https://aymp999.github.io/.in/  #Daily benefit of your zodiac sign in many languages",
+    "video_id": "QhdQIgRtGFw",
+    "published": "2026-08-13T05:57:32+00:00",
+    "url": "https://www.youtube.com/watch?v=QhdQIgRtGFw"
+  },
+  "next_phase": [
+    "connect approved content-source feeds for global discovery",
+    "connect an approved LLM through GitHub Secrets only",
+    "keep human review before publishing generated wellness/news copy",
+    "add weekly analytics summary"
+  ]
+}

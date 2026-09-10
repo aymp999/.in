@@ -1,7 +1,49 @@
 {
   "version": "1.0",
+  "generated_at": "2026-09-10T06:59:14.604300+05:30",
   "mode": "draft-only",
   "publish_allowed": false,
   "human_approval_required": true,
-  "items": []
+  "existing_content_read_only": true,
+  "wallet_secrets_access": false,
+  "external_llm_api": false,
+  "day_number": 3,
+  "items": [
+    {
+      "section": "Today’s Zodiac",
+      "idea": "Day 3: invite visitors to open the existing Daily Zodiac experience.",
+      "status": "DRAFT_ONLY",
+      "publish": false
+    },
+    {
+      "section": "Global Discovery",
+      "idea": "Prepare a curiosity-led global discovery using an approved source; verify before publication.",
+      "status": "DRAFT_ONLY",
+      "publish": false
+    },
+    {
+      "section": "Wellness Tip",
+      "idea": "Prepare one conservative educational wellness tip; no diagnosis, dosage, or treatment claims.",
+      "status": "DRAFT_ONLY",
+      "publish": false
+    },
+    {
+      "section": "Food Discovery",
+      "idea": "Prepare one safe, general food-learning prompt using an approved source.",
+      "status": "DRAFT_ONLY",
+      "publish": false
+    },
+    {
+      "section": "Latest Video",
+      "idea": "Highlight latest AYMP video: https://aymp999.github.io/.in/  #Daily benefit of your zodiac sign in many languages.",
+      "status": "DRAFT_ONLY",
+      "publish": false
+    },
+    {
+      "section": "Cosmic Challenge",
+      "idea": "Invite visitors to complete one short Cosmic Kingdom action and return tomorrow.",
+      "status": "DRAFT_ONLY",
+      "publish": false
+    }
+  ]
 }
