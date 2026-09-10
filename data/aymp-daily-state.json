@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T11:56:51.399498+05:30",
+  "generated_at": "2026-09-10T20:13:39.689510+05:30",
   "timezone": "Asia/Kolkata",
   "engine_version": "1.1-growth-draft",
   "day_of_year": 253,
@@ -40,8 +40,11 @@
     }
   },
   "latest_youtube": {
-    "status": "unavailable",
-    "reason": "HTTP Error 404: Not Found"
+    "status": "ok",
+    "title": "https://aymp999.github.io/.in/  #Daily benefit of your zodiac sign in many languages",
+    "video_id": "QhdQIgRtGFw",
+    "published": "2026-08-13T05:57:32+00:00",
+    "url": "https://www.youtube.com/watch?v=QhdQIgRtGFw"
   },
   "next_phase": [
     "connect approved content-source feeds for global discovery",
