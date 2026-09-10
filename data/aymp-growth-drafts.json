@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated_at": "2026-09-10T06:59:14.604300+05:30",
+  "generated_at": "2026-09-10T11:56:51.399498+05:30",
   "mode": "draft-only",
   "publish_allowed": false,
   "human_approval_required": true,
@@ -35,7 +35,7 @@
     },
     {
       "section": "Latest Video",
-      "idea": "Highlight latest AYMP video: https://aymp999.github.io/.in/  #Daily benefit of your zodiac sign in many languages.",
+      "idea": "Highlight the newest valid AYMP YouTube item; use a neutral fallback if unavailable.",
       "status": "DRAFT_ONLY",
       "publish": false
     },
