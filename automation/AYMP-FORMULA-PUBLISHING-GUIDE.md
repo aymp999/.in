@@ -1,0 +1,1 @@
+# AYMP Formula Publishing Guide\n\nEach new formula must be based on user-provided AYMP experience or an explicitly approved conceptual insight. Public entries use: title, category, formula, short insight, and context note. Personalized predictions or guaranteed outcomes are not auto-published.\n

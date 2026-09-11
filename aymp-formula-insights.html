@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ta">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AYMP Formula Insights</title>
+<meta name="description" content="AYMP Formula Insights — 27+ years of experience expressed as concise conceptual insight frameworks.">
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#06111f;color:#eef5ff;line-height:1.6}
+main{max-width:920px;margin:auto;padding:24px}
+h1{color:#f6c85f}.hero,.card{background:#0c1c31;border:1px solid #294768;border-radius:16px;padding:20px;margin:16px 0}
+.formula{font-size:1.2rem;font-weight:700;color:#f6c85f;padding:14px 0}
+.badge{display:inline-block;padding:4px 10px;border-radius:999px;background:#173452;color:#bde4ff;font-size:.85rem}
+small{color:#aab9c8}.cta{display:inline-block;background:#f6c85f;color:#111;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:700;margin-top:10px}
+</style>
+</head>
+<body><main>
+<section class="hero">
+<span class="badge">AYMP Original Knowledge System</span>
+<h1>🧮 AYMP Formula Insights</h1>
+<p>27+ வருட அனுபவம் மற்றும் ஆய்வு முறையை சுருக்கமான கருத்து + Formula + Insight வடிவில் வழங்கும் AYMP அறிவு பகுதி.</p>
+<p><small>இந்த Formula-கள் AYMP அனுபவ அடிப்படையிலான conceptual frameworks; அறிவியல் கணிதச் சட்டம் அல்லது எதிர்கால முடிவின் உத்தரவாதம் அல்ல.</small></p>
+<a class="cta" href="ask-aymp.html">Ask AYMP / Personal Guidance</a>
+</section>
+<div id="list"></div>
+<script>
+fetch('data/aymp-formula-insights-v1.json').then(r=>r.json()).then(items=>{
+ document.getElementById('list').innerHTML=items.map(x=>'<article class="card"><span class="badge">'+x.category+'</span><h2>'+x.title+'</h2><div class="formula">'+x.formula+'</div><p><b>AYMP Insight:</b> '+x.insight+'</p><small>'+x.note+'</small></article>').join('');
+});
+</script>
+</main></body></html>
