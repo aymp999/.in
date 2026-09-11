@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated_at": "2026-09-11T11:59:15.340350+05:30",
+  "generated_at": "2026-09-11T18:57:51.880799+05:30",
   "mode": "draft-only",
   "publish_allowed": false,
   "human_approval_required": true,
@@ -35,7 +35,7 @@
     },
     {
       "section": "Latest Video",
-      "idea": "Highlight the newest valid AYMP YouTube item; use a neutral fallback if unavailable.",
+      "idea": "Highlight latest AYMP video: தங்கபரிசு #astrology #ai #amazingfacts #news.",
       "status": "DRAFT_ONLY",
       "publish": false
     },
