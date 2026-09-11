@@ -1,15 +1,10 @@
-name: Enable AYMP Planetary Research Bridge
+name: Enable AYMP Planetary Research Bridge (Parked)
 
-# Keeps the existing guidance engine connected to the dedicated planetary database.
+# PARKED LEGACY WORKFLOW — preserved for future use.
+# This workflow previously auto-ran on pushes and produced failed runs.
+# It is now manual-only so it cannot create noise or modify the guidance engine automatically.
 on:
-  push:
-    paths:
-      - 'assets/js/guidance.js'
-      - 'assets/js/planetary-research-db.js'
-      - 'assets/js/aymp-lagna-research-result.js'
-      - 'assets/js/aymp-lagna-life-concern-mapping.js'
-      - 'data/aymp_lagna_life_concern_planet_mapping_v1.json'
-      - '.github/workflows/enable-planetary-research-bridge.yml'
+  workflow_dispatch:
 
 permissions:
   contents: write
