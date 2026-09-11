@@ -1,0 +1,16 @@
+{
+  "name": "AYMP Revenue System v1",
+  "principle": "Value -> Trust -> Useful Paid Service -> Sustainable Revenue",
+  "status": "foundation",
+  "layers": [
+    {"id":"free","name":"Free Formula Insights","purpose":"Audience and trust"},
+    {"id":"basic","name":"Basic Guidance","purpose":"Focused paid guidance"},
+    {"id":"detailed","name":"Detailed Personal Analysis","purpose":"Structured personalized analysis"},
+    {"id":"consultation","name":"Premium Consultation","purpose":"Direct expert consultation"}
+  ],
+  "measurement": ["visitors","engagement_rate","lead_rate","conversion_rate","average_customer_value"],
+  "tokens": {
+    "AYMP":"Future optional ecosystem utility; not an investment-return promise",
+    "999xyz999":"Future optional community/ecosystem utility; not an investment-return promise"
+  }
+}
