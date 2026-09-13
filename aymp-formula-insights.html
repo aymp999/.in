@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="ta">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AYMP Formula Insights</title>
-<meta name="description" content="AYMP Formula Insights — 27+ years of experience expressed as concise conceptual insight frameworks.">
+<meta name="description" content="AYMP Formula Insights — experience-based conceptual frameworks presented for a global audience.">
 <style>
 body{margin:0;font-family:Arial,sans-serif;background:#06111f;color:#eef5ff;line-height:1.6}
 main{max-width:920px;margin:auto;padding:24px}
@@ -12,20 +12,41 @@ h1{color:#f6c85f}.hero,.card{background:#0c1c31;border:1px solid #294768;border-
 .formula{font-size:1.2rem;font-weight:700;color:#f6c85f;padding:14px 0}
 .badge{display:inline-block;padding:4px 10px;border-radius:999px;background:#173452;color:#bde4ff;font-size:.85rem}
 small{color:#aab9c8}.cta{display:inline-block;background:#f6c85f;color:#111;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:700;margin-top:10px}
+select{background:#10243b;color:#fff;border:1px solid #416487;border-radius:10px;padding:10px;margin-bottom:12px;font-size:1rem}
+[dir="rtl"]{direction:rtl} [dir="rtl"] .formula{direction:rtl}
 </style>
 </head>
 <body><main>
 <section class="hero">
-<span class="badge">AYMP Original Knowledge System</span>
-<h1>🧮 AYMP Formula Insights</h1>
-<p>27+ வருட அனுபவம் மற்றும் ஆய்வு முறையை சுருக்கமான கருத்து + Formula + Insight வடிவில் வழங்கும் AYMP அறிவு பகுதி.</p>
-<p><small>இந்த Formula-கள் AYMP அனுபவ அடிப்படையிலான conceptual frameworks; அறிவியல் கணிதச் சட்டம் அல்லது எதிர்கால முடிவின் உத்தரவாதம் அல்ல.</small></p>
-<a class="cta" href="ask-aymp.html">Ask AYMP / Personal Guidance</a>
+<span class="badge" id="badge">AYMP Original Knowledge System</span>
+<h1>🧮 <span id="pageTitle">AYMP Formula Insights</span></h1>
+<select id="language" aria-label="Language">
+<option value="en">English</option><option value="ta">தமிழ்</option><option value="hi">हिन्दी</option><option value="ar">العربية</option><option value="es">Español</option><option value="fr">Français</option><option value="ms">Bahasa Melayu</option><option value="zh">中文</option>
+</select>
+<p id="intro">A concise presentation of AYMP's experience and research approach through Concept + Formula + Insight.</p>
+<p><small id="disclaimer">These formulas are AYMP experience-based conceptual frameworks; they are not scientific laws and do not guarantee future outcomes.</small></p>
+<a class="cta" id="cta" href="ask-aymp.html">Ask AYMP / Personal Guidance</a>
 </section>
 <div id="list"></div>
 <script>
-fetch('data/aymp-formula-insights-v1.json').then(r=>r.json()).then(items=>{
- document.getElementById('list').innerHTML=items.map(x=>'<article class="card"><span class="badge">'+x.category+'</span><h2>'+x.title+'</h2><div class="formula">'+x.formula+'</div><p><b>AYMP Insight:</b> '+x.insight+'</p><small>'+x.note+'</small></article>').join('');
-});
+const ui={
+ en:{badge:'AYMP Original Knowledge System',title:'AYMP Formula Insights',intro:"A concise presentation of AYMP's experience and research approach through Concept + Formula + Insight.",disclaimer:'These formulas are AYMP experience-based conceptual frameworks; they are not scientific laws and do not guarantee future outcomes.',cta:'Ask AYMP / Personal Guidance'},
+ ta:{badge:'AYMP அசல் அறிவு அமைப்பு',title:'AYMP Formula Insights',intro:'AYMP அனுபவம் மற்றும் ஆய்வு முறையை கருத்து + Formula + Insight வடிவில் சுருக்கமாக வழங்கும் அறிவுப் பகுதி.',disclaimer:'இந்த Formula-கள் AYMP அனுபவ அடிப்படையிலான conceptual frameworks; அறிவியல் சட்டங்கள் அல்ல, எதிர்கால முடிவுகளுக்கு உத்தரவாதமும் அல்ல.',cta:'Ask AYMP / தனிப்பட்ட வழிகாட்டல்'},
+ hi:{badge:'AYMP मूल ज्ञान प्रणाली',title:'AYMP Formula Insights',intro:'AYMP के अनुभव और शोध दृष्टिकोण को Concept + Formula + Insight के रूप में संक्षेप में प्रस्तुत किया गया है।',disclaimer:'ये Formula AYMP के अनुभव-आधारित वैचारिक ढाँचे हैं; वैज्ञानिक नियम नहीं हैं और भविष्य के परिणामों की गारंटी नहीं देते।',cta:'Ask AYMP / व्यक्तिगत मार्गदर्शन'},
+ ar:{badge:'منظومة AYMP المعرفية الأصلية',title:'رؤى معادلات AYMP',intro:'عرض موجز لخبرة AYMP ومنهج البحث بصيغة المفهوم + المعادلة + الرؤية.',disclaimer:'هذه المعادلات أطر مفاهيمية قائمة على خبرة AYMP؛ وليست قوانين علمية ولا تضمن النتائج المستقبلية.',cta:'اسأل AYMP / الإرشاد الشخصي'},
+ es:{badge:'Sistema de conocimiento original de AYMP',title:'Perspectivas de Fórmulas AYMP',intro:'Una presentación concisa del enfoque de experiencia e investigación de AYMP mediante Concepto + Fórmula + Insight.',disclaimer:'Estas fórmulas son marcos conceptuales basados en la experiencia de AYMP; no son leyes científicas ni garantizan resultados futuros.',cta:'Preguntar a AYMP / Orientación personal'},
+ fr:{badge:'Système de connaissances original AYMP',title:'Insights des Formules AYMP',intro:'Une présentation concise de l’expérience et de l’approche de recherche AYMP sous la forme Concept + Formule + Insight.',disclaimer:'Ces formules sont des cadres conceptuels fondés sur l’expérience AYMP ; elles ne sont pas des lois scientifiques et ne garantissent pas les résultats futurs.',cta:'Demander à AYMP / Orientation personnelle'},
+ ms:{badge:'Sistem Pengetahuan Asal AYMP',title:'Formula Insights AYMP',intro:'Pembentangan ringkas pengalaman dan pendekatan penyelidikan AYMP melalui Konsep + Formula + Wawasan.',disclaimer:'Formula ini ialah rangka kerja konseptual berasaskan pengalaman AYMP; bukan undang-undang saintifik dan tidak menjamin hasil masa depan.',cta:'Tanya AYMP / Panduan peribadi'},
+ zh:{badge:'AYMP 原创知识体系',title:'AYMP 公式洞见',intro:'以“概念 + 公式 + 洞见”的形式，简明呈现 AYMP 的经验与研究方法。',disclaimer:'这些公式是基于 AYMP 经验的概念性框架；不是科学定律，也不保证未来结果。',cta:'询问 AYMP / 个人指导'}
+};
+let items=[];
+function render(lang){
+ const t=ui[lang]||ui.en; document.documentElement.lang=lang; document.documentElement.dir=lang==='ar'?'rtl':'ltr';
+ ['badge','pageTitle','intro','disclaimer','cta'].forEach(k=>document.getElementById(k).textContent=t[k]);
+ document.getElementById('list').innerHTML=items.map(x=>{const y=lang==='ta'?{category:x.category,title:x.title,formula:x.formula,insight:x.insight,note:x.note}:(x.i18n&&x.i18n[lang])||(x.i18n&&x.i18n.en)||x;return '<article class="card"><span class="badge">'+y.category+'</span><h2>'+y.title+'</h2><div class="formula">'+y.formula+'</div><p><b>'+ (lang==='ta'?'AYMP Insight:':'AYMP Insight:')+'</b> '+y.insight+'</p><small>'+y.note+'</small></article>';}).join('');
+ localStorage.setItem('aympFormulaLanguage',lang);
+}
+fetch('data/aymp-formula-insights-v1.json').then(r=>r.json()).then(data=>{items=data;const saved=localStorage.getItem('aympFormulaLanguage');render(saved||((navigator.language||'en').slice(0,2) in ui?(navigator.language||'en').slice(0,2):'en'));}).catch(()=>{document.getElementById('list').innerHTML='<p>Formula Insights are temporarily unavailable. Please try again.</p>';});
+document.getElementById('language').addEventListener('change',e=>render(e.target.value));
 </script>
 </main></body></html>
