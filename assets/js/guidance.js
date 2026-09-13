@@ -72,9 +72,13 @@ document.addEventListener('DOMContentLoaded', function () {
   section.innerHTML = '<div class="container" style="max-width:1200px;margin:auto;text-align:center;">' +
     '<div style="background:linear-gradient(135deg,rgba(21,35,53,.96),rgba(61,35,82,.96));border:2px solid rgba(255,215,0,.45);border-radius:30px;padding:42px 25px;box-shadow:0 0 35px rgba(255,215,0,.16);">' +
     '<div style="font-size:46px;margin-bottom:12px;">🌿</div>' +
-    '<h2 style="font-family:Cinzel,serif;color:#ffd700;font-size:38px;margin-bottom:12px;">Siddha Wellness Solutions</h2>' +
-    '<p style="color:#eee;font-size:18px;max-width:800px;margin:0 auto 25px;">Traditional Siddha wellness guidance for Men, Women &amp; Family Well-Being</p>' +
-    '<a href="siddha-wellness.html" class="btn" style="display:inline-block;padding:16px 32px;border-radius:40px;background:linear-gradient(45deg,#c9a227,#ffdf6b);color:#111;font-weight:700;text-decoration:none;box-shadow:0 0 20px rgba(255,215,0,.35);">🌿 EXPLORE SIDDHA WELLNESS</a>' +
+    '<h2 style="font-family:Cinzel,serif;color:#ffd700;font-size:38px;margin-bottom:12px;">AYMP Siddha Wellness &amp; Product Enquiry</h2>' +
+    '<p style="color:#eee;font-size:18px;max-width:820px;margin:0 auto 18px;">Traditional Siddha wellness information and product enquiry for Men, Women, Children &amp; Family Well-Being.</p>' +
+    '<div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;align-items:center;">' +
+    '<a href="siddha-wellness.html" class="btn" style="display:inline-block;padding:16px 30px;border-radius:40px;background:linear-gradient(45deg,#c9a227,#ffdf6b);color:#111;font-weight:700;text-decoration:none;box-shadow:0 0 20px rgba(255,215,0,.35);">🌿 EXPLORE SIDDHA WELLNESS</a>' +
+    '<a href="siddha-products.html" class="btn" style="display:inline-block;padding:16px 30px;border-radius:40px;background:linear-gradient(45deg,#5b3b86,#9a72d1);color:#fff;font-weight:700;text-decoration:none;border:1px solid rgba(255,215,0,.45);box-shadow:0 0 20px rgba(154,114,209,.3);">🛍️ PRODUCTS &amp; ENQUIRY</a>' +
+    '</div>' +
+    '<p style="margin:20px auto 0;color:#cfcfcf;font-size:13px;max-width:850px;">Fertility wellness • Skin wellness • Psoriasis information • Diabetes wellness support • Joint &amp; mobility wellness • Energy &amp; vitality • Special children support • General wellness</p>' +
     '</div></div>';
   var footer = document.querySelector('footer');
   if (footer && footer.parentNode) footer.parentNode.insertBefore(section, footer);
