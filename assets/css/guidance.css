@@ -163,6 +163,30 @@
 @keyframes orbitRotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 @keyframes orbitReverse { from { transform: rotate(360deg); } to { transform: rotate(0deg); } }
 
+/* ======================================
+   AYMP SACRED MANTRA — HIGHLIGHT ONLY
+   ====================================== */
+#aympLagnaResearchResultBody .aymp-lagna-result-card:nth-child(4) {
+    position: relative;
+    padding: 16px;
+    border: 1px solid rgba(255, 215, 0, 0.78);
+    border-radius: 15px;
+    background: radial-gradient(circle at 50% 0%, rgba(255,215,0,.18), rgba(255,255,255,.035) 65%);
+    box-shadow: 0 0 10px rgba(255,215,0,.42), 0 0 28px rgba(255,215,0,.20), inset 0 0 18px rgba(255,215,0,.08);
+    animation: sacredMantraGlow 2.8s ease-in-out infinite;
+}
+
+#aympLagnaResearchResultBody .aymp-lagna-result-card:nth-child(4) b {
+    color: #FFE36E;
+    text-shadow: 0 0 8px rgba(255,215,0,.85), 0 0 18px rgba(255,215,0,.35);
+    letter-spacing: .3px;
+}
+
+@keyframes sacredMantraGlow {
+    0%, 100% { box-shadow: 0 0 10px rgba(255,215,0,.38), 0 0 24px rgba(255,215,0,.16), inset 0 0 14px rgba(255,215,0,.06); }
+    50% { box-shadow: 0 0 18px rgba(255,215,0,.72), 0 0 42px rgba(255,215,0,.28), inset 0 0 22px rgba(255,215,0,.12); }
+}
+
 /* Mobile: birth form remains compact; only the calculated result can scroll. */
 @media (max-width: 600px) {
     .guidance-content {
