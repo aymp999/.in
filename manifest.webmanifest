@@ -1,0 +1,19 @@
+{
+  "name": "AYMP – Astro, Wellness, Knowledge & Games",
+  "short_name": "AYMP",
+  "start_url": "/.in/",
+  "scope": "/.in/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#050816",
+  "theme_color": "#0b1026",
+  "description": "AYMP global astrology, wellness, knowledge, food, games and guidance hub.",
+  "icons": [
+    {
+      "src": "assets/images/aymp-app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
