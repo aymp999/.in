@@ -58,8 +58,8 @@
   };
 
   function esc(v) {
-    return String(v == null ? '' : v).replace(/[&<>"']/g, function (c) {
-      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c];
+    return String(v == null ? '' : v).replace(/[&<>\"']/g, function (c) {
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',"'":'&#039;'}[c];
     });
   }
 
@@ -76,7 +76,11 @@
       .aymp-planet-overlay{position:fixed;inset:0;z-index:100002;background:rgba(0,0,0,.84);padding:14px;overflow:auto}.aymp-planet-detail{position:relative;max-width:650px;margin:5vh auto;padding:19px;border-radius:18px;background:#171026;color:#fff;border:1px solid rgba(255,215,120,.25);box-shadow:0 20px 70px #000}.aymp-planet-detail-head{display:flex;justify-content:space-between;align-items:start}.aymp-planet-detail-head h3{display:inline;margin:0 8px}.aymp-planet-detail-head small{opacity:.62}.aymp-planet-detail-head>div>span{color:#ffd66a}.aymp-planet-detail-head button{border:0;background:none;color:#fff;font-size:30px;cursor:pointer}
       .aymp-planet-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:14px}.aymp-planet-fields label{font-size:.7rem;opacity:.68}.aymp-planet-fields input{display:block;width:100%;margin-top:3px;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#ffd66a;box-sizing:border-box}
       .aymp-planet-note{margin-top:10px;padding:11px;border-radius:10px;background:rgba(255,215,120,.06)}.aymp-planet-note p{margin:5px 0 0;opacity:.7;font-size:.8rem;line-height:1.4}.aymp-planet-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:9px}.aymp-planet-links div{padding:9px;border:1px dashed rgba(255,255,255,.13);border-radius:8px;font-size:.75rem}.aymp-planet-links span{display:block;margin-top:3px;color:#ffd66a;font-size:.7rem}.aymp-planet-verification{font-size:.7rem;opacity:.5}
-      @media(max-width:600px){.aymp-planet-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.aymp-planet-fields,.aymp-planet-links{grid-template-columns:1fr}.aymp-planet-detail{margin:2vh auto;padding:14px}}
+      .aymp-sacred-mantra-box{position:relative!important;padding:14px 16px!important;border:1px solid rgba(255,215,0,.9)!important;border-radius:15px!important;background:radial-gradient(circle at 50% 0%,rgba(255,215,0,.20),rgba(255,255,255,.025) 72%)!important;box-shadow:0 0 12px rgba(255,215,0,.48),0 0 30px rgba(255,215,0,.22),inset 0 0 18px rgba(255,215,0,.08)!important;animation:aympSacredMantraPulse 2.4s ease-in-out infinite!important}
+      .aymp-sacred-mantra-box b{color:#ffe36e!important;text-shadow:0 0 8px rgba(255,215,0,.9),0 0 18px rgba(255,215,0,.4)!important}
+      .aymp-sacred-mantra-box span{color:#fff4b0!important;text-shadow:0 0 7px rgba(255,215,0,.35)!important}
+      @keyframes aympSacredMantraPulse{0%,100%{transform:scale(1);box-shadow:0 0 12px rgba(255,215,0,.42),0 0 28px rgba(255,215,0,.18),inset 0 0 16px rgba(255,215,0,.06)!important}50%{transform:scale(1.012);box-shadow:0 0 22px rgba(255,215,0,.82),0 0 46px rgba(255,215,0,.30),inset 0 0 24px rgba(255,215,0,.12)!important}}
+      @media(max-width:600px){.aymp-planet-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.aymp-planet-fields,.aymp-planet-links{grid-template-columns:1fr}.aymp-planet-detail{margin:2vh auto;padding:14px}.aymp-sacred-mantra-box{padding:12px 13px!important}}
     `;
     document.head.appendChild(style);
   }
@@ -104,7 +108,7 @@
           overlay.innerHTML = '<div class="aymp-planet-detail"><div class="aymp-planet-detail-head"><div><span>' + esc(p.order) + '</span><h3>' + esc(p.name_en) + '</h3><small>' + esc(p.name_ta) + '</small></div><button type="button" id="aympPlanetClose">×</button></div>' +
             '<div class="aymp-planet-fields"><label>Planetary Position<input value="' + esc(r.position) + '" readonly></label><label>House<input value="' + esc(r.house) + '" readonly></label><label>Sign<input value="' + esc(r.sign) + '" readonly></label><label>Strength<input value="' + esc(r.strength) + '" readonly></label><label>Challenge<input value="' + esc(r.challenge) + '" readonly></label><label>Affected Status<input value="' + esc(r.affected_status || 'pending') + '" readonly></label></div>' +
             '<div class="aymp-planet-note"><b>Research Interpretation</b><p>' + esc(r.research_interpretation || 'Pending approved AYMP research entry.') + '</p></div>' +
-            '<div class="aymp-planet-links"><div><b>Approved Herbs</b><span>' + esc((l.herb_ids || []).join(', ') || 'Pending') + '</span></div><div><b>Approved Yantras</b><span>' + esc((l.yantra_ids || []).join(', ') || 'Pending') + '</span></div><div><b>Mantra Records</b><span>' + esc((l.mantra_ids || []).join(', ') || 'Pending') + '</span></div><div><b>Talisman Records</b><span>' + esc((l.talisman_ids || []).join(', ') || 'Pending') + '</span></div></div>' +
+            '<div class="aymp-planet-links"><div><b>Approved Herbs</b><span>' + esc((l.herb_ids || []).join(', ') || 'Pending') + '</span></div><div><b>Approved Yantras</b><span>' + esc((l.yantra_ids || []).join(', ') || 'Pending') + '</span></div><div class="aymp-sacred-mantra-box"><b>AYMP Sacred Mantra</b><span>' + esc((l.mantra_ids || []).join(', ') || 'Pending') + '</span></div><div><b>Talisman Records</b><span>' + esc((l.talisman_ids || []).join(', ') || 'Pending') + '</span></div></div>' +
             '<p class="aymp-planet-verification">Verification: ' + esc(r.verification_status || 'pending') + '</p></div>';
           document.body.appendChild(overlay); overlay.querySelector('#aympPlanetClose').onclick = function () { overlay.remove(); }; overlay.addEventListener('click', function (e) { if (e.target === overlay) overlay.remove(); });
         });
