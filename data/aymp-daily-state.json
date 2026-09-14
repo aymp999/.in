@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T05:21:47.934462+05:30",
+  "generated_at": "2026-09-14T12:19:30.158633+05:30",
   "timezone": "Asia/Kolkata",
   "engine_version": "1.1-growth-draft",
   "day_of_year": 257,
@@ -40,11 +40,8 @@
     }
   },
   "latest_youtube": {
-    "status": "ok",
-    "title": "தங்கபரிசு #astrology #ai #amazingfacts #news",
-    "video_id": "ycvXip5gBjQ",
-    "published": "2026-09-11T09:31:48+00:00",
-    "url": "https://www.youtube.com/watch?v=ycvXip5gBjQ"
+    "status": "unavailable",
+    "reason": "HTTP Error 404: Not Found"
   },
   "next_phase": [
     "connect approved content-source feeds for global discovery",
