@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-07T13:04:48.198914+05:30",
+  "generated_at": "2026-10-08T13:21:38.533352+05:30",
   "timezone": "Asia/Kolkata",
   "engine_version": "1.1-growth-draft",
-  "day_of_year": 280,
-  "zodiac_day": "Day30",
+  "day_of_year": 281,
+  "zodiac_day": "Day31",
   "zodiac_database": {
     "path": "data/all_zodiac_v1.json",
     "sign_count": 12,
@@ -41,10 +41,10 @@
   },
   "latest_youtube": {
     "status": "ok",
-    "title": "ஆண்களின் வலிமை ஆளுமைக்கு சித்தமருந்து #SIDDHAWELLNESS ##gensweak",
-    "video_id": "Ojjh_jZhCNc",
-    "published": "2026-09-18T05:11:15+00:00",
-    "url": "https://www.youtube.com/watch?v=Ojjh_jZhCNc"
+    "title": "If there is a mind, the soil becomes gold",
+    "video_id": "MsbNIQJ7ORc",
+    "published": "2026-10-08T05:12:17+00:00",
+    "url": "https://www.youtube.com/watch?v=MsbNIQJ7ORc"
   },
   "next_phase": [
     "connect approved content-source feeds for global discovery",
