@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-09T13:18:58.178199+05:30",
+  "generated_at": "2026-10-10T07:00:19.778488+05:30",
   "timezone": "Asia/Kolkata",
   "engine_version": "1.1-growth-draft",
-  "day_of_year": 282,
-  "zodiac_day": "Day32",
+  "day_of_year": 283,
+  "zodiac_day": "Day33",
   "zodiac_database": {
     "path": "data/all_zodiac_v1.json",
     "sign_count": 12,
@@ -40,11 +40,8 @@
     }
   },
   "latest_youtube": {
-    "status": "ok",
-    "title": "If there is a mind, the soil becomes gold",
-    "video_id": "MsbNIQJ7ORc",
-    "published": "2026-10-08T18:30:07+00:00",
-    "url": "https://www.youtube.com/watch?v=MsbNIQJ7ORc"
+    "status": "unavailable",
+    "reason": "HTTP Error 404: Not Found"
   },
   "next_phase": [
     "connect approved content-source feeds for global discovery",
