@@ -21,12 +21,24 @@ document.addEventListener('DOMContentLoaded', function () {
     const root=box.querySelector('.aymp-guidance-result');if(root)root.appendChild(wrap);else box.appendChild(wrap);
     document.getElementById('aympGuidanceResearchButton').onclick=function(){if(window.AYMPResultPresentation&&typeof window.AYMPResultPresentation.open==='function')window.AYMPResultPresentation.open();else alert('Yantra Research is still loading. Please try again in a moment.');};
   }
+  function addConsultationEnquiry(box){
+    const old=document.getElementById('aympConsultationEnquiry');if(old)old.remove();
+    const wrap=document.createElement('div');wrap.id='aympConsultationEnquiry';
+    wrap.style.cssText='margin-top:14px;padding:16px;border:1px solid rgba(37,211,102,.42);border-radius:16px;background:rgba(37,211,102,.07);';
+    const message='Hello AYMPONSOMU, I tried the AYMP Personal Guidance experience and would like to enquire about a personal consultation. Please share the available options and fees before I decide.';
+    const url='https://wa.me/918903924996?text='+encodeURIComponent(message);
+    wrap.innerHTML='<h3 style="color:#ffdf6b;margin:0 0 8px;">Would you like to discuss this further?</h3><p style="color:#ddd;margin:0 0 12px;font-size:14px;">You can ask about a personal consultation and confirm the scope and fee before booking. Your birth details are not automatically sent to WhatsApp.</p><a id="aympConsultationWhatsApp" href="'+url+'" target="_blank" rel="noopener noreferrer" style="display:block;text-align:center;padding:13px 16px;border-radius:12px;background:#25d366;color:#062b16;font-weight:800;text-decoration:none;">💬 Enquire about a consultation on WhatsApp</a>';
+    const root=box.querySelector('.aymp-guidance-result');if(root)root.appendChild(wrap);else box.appendChild(wrap);
+    const link=document.getElementById('aympConsultationWhatsApp');
+    if(link)link.addEventListener('click',function(){try{if(typeof window.gtag==='function')window.gtag('event','aymp_consultation_enquiry_click',{event_category:'conversion',event_label:'personal-guidance-result'});}catch(_){}});
+  }
   function showGuidance(index,name,dob,time,place,chart){
     const p=patterns[index],music=musicFiles[index%musicFiles.length],box=popup.querySelector('.guidance-content');if(!box)return;
     const researchSection=getResearchSection(box);
     box.innerHTML=`<div class="aymp-guidance-result"><span class="close-popup" id="resultClose">×</span><div class="power-art-glow"><div class="energy-orbit"></div><div class="power-core">✦</div></div><h2>✨ AYMP PERSONAL GUIDANCE</h2><h3>Welcome, ${esc(name)}</h3><div class="birth-summary"><p>📅 <strong>Date:</strong> ${esc(dob)}</p><p>⏰ <strong>Time:</strong> ${esc(time)}</p><p>📍 <strong>Place:</strong> ${esc(place)}</p>${chart?`<p>🌌 <strong>Lagna:</strong> ${esc(chart.lagna)} (${esc(chart.ascendantText)})</p><p>🕰️ <strong>Time Zone:</strong> ${esc(chart.timezone)}</p>`:''}</div><div class="guidance-card"><h3>🌌 Your Cosmic Insight</h3><p>${esc(p[2])}</p></div><div class="sound-card"><div class="sound-label">🔱 AYMP SACRED MANTRA</div><div id="changingSound" class="changing-sound sound-animate">${esc(p[1])}</div><div class="sound-title">${esc(p[0])}</div><div class="music-panel"><div id="musicName">🎵 ${esc(music)}</div><button type="button" id="playMusicBtn">▶ PLAY SACRED MUSIC</button><button type="button" id="pauseMusicBtn">⏸ PAUSE</button><button type="button" id="stopMusicBtn">⏹ STOP</button><p id="musicStatus">🎵 Sacred music ready.</p></div></div><div class="guidance-card"><h3>🙏 Mantra Meaning</h3><p>${esc(p[2])}</p></div><div class="practice-card"><h3>🧘 Practice</h3><p>Repeat the mantra <strong>108 times</strong> if suitable for your personal practice.</p></div></div>`;
     if(researchSection){box.appendChild(researchSection);researchSection.style.display='none';}
     addResearchButton(box);
+    addConsultationEnquiry(box);
     document.getElementById('resultClose').onclick=function(){stopMusic();popup.style.display='none';};
     document.getElementById('playMusicBtn').onclick=function(){if(!audio)playFile(music);else audio.play().catch(function(){});};
     document.getElementById('pauseMusicBtn').onclick=function(){if(audio){audio.pause();document.getElementById('musicStatus').textContent='⏸ Sacred music paused.';}};
