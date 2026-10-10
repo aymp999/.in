@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T07:00:52.684061+05:30",
+  "generated_at": "2026-10-10T13:06:06.080699+05:30",
   "timezone": "Asia/Kolkata",
   "engine_version": "1.1-growth-draft",
   "day_of_year": 283,
@@ -40,8 +40,11 @@
     }
   },
   "latest_youtube": {
-    "status": "unavailable",
-    "reason": "HTTP Error 404: Not Found"
+    "status": "ok",
+    "title": "If there is a mind, the soil becomes gold",
+    "video_id": "MsbNIQJ7ORc",
+    "published": "2026-10-08T18:30:07+00:00",
+    "url": "https://www.youtube.com/watch?v=MsbNIQJ7ORc"
   },
   "next_phase": [
     "connect approved content-source feeds for global discovery",
