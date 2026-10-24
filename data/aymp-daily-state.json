@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-23T11:51:48.764237+05:30",
+  "generated_at": "2026-10-24T11:47:10.424578+05:30",
   "timezone": "Asia/Kolkata",
   "engine_version": "1.1-growth-draft",
-  "day_of_year": 296,
-  "zodiac_day": "Day46",
+  "day_of_year": 297,
+  "zodiac_day": "Day47",
   "zodiac_database": {
     "path": "data/all_zodiac_v1.json",
     "sign_count": 12,
