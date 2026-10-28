@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-27T12:09:25.198000+05:30",
+  "generated_at": "2026-10-28T12:41:55.533523+05:30",
   "timezone": "Asia/Kolkata",
   "engine_version": "1.1-growth-draft",
-  "day_of_year": 300,
-  "zodiac_day": "Day50",
+  "day_of_year": 301,
+  "zodiac_day": "Day1",
   "zodiac_database": {
     "path": "data/all_zodiac_v1.json",
     "sign_count": 12,
@@ -40,8 +40,11 @@
     }
   },
   "latest_youtube": {
-    "status": "unavailable",
-    "reason": "HTTP Error 500: Internal Server Error"
+    "status": "ok",
+    "title": "Ai #animation #ai #lifeisbutadream #amazingfacts #ihavethisthingwithplants #cartoon",
+    "video_id": "jDgOUAQx7-I",
+    "published": "2026-10-23T07:17:19+00:00",
+    "url": "https://www.youtube.com/watch?v=jDgOUAQx7-I"
   },
   "next_phase": [
     "connect approved content-source feeds for global discovery",
