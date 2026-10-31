@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-30T13:06:44.422334+05:30",
+  "generated_at": "2026-10-31T12:53:22.446484+05:30",
   "timezone": "Asia/Kolkata",
   "engine_version": "1.1-growth-draft",
-  "day_of_year": 303,
-  "zodiac_day": "Day3",
+  "day_of_year": 304,
+  "zodiac_day": "Day4",
   "zodiac_database": {
     "path": "data/all_zodiac_v1.json",
     "sign_count": 12,
@@ -41,10 +41,10 @@
   },
   "latest_youtube": {
     "status": "ok",
-    "title": "Ai #animation #ai #lifeisbutadream #amazingfacts #ihavethisthingwithplants #cartoon",
-    "video_id": "jDgOUAQx7-I",
-    "published": "2026-10-23T07:17:19+00:00",
-    "url": "https://www.youtube.com/watch?v=jDgOUAQx7-I"
+    "title": "அதிர்ஷ்டம் யாருக்கு? ராகு&amp;கேது பெயர்ச்சி 5/12 2026",
+    "video_id": "0ZM6z7MzeyM",
+    "published": "2026-10-31T03:12:53+00:00",
+    "url": "https://www.youtube.com/watch?v=0ZM6z7MzeyM"
   },
   "next_phase": [
     "connect approved content-source feeds for global discovery",
