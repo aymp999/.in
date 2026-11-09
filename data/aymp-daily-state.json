@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-08T13:17:27.376729+05:30",
+  "generated_at": "2026-11-09T13:59:46.176740+05:30",
   "timezone": "Asia/Kolkata",
   "engine_version": "1.1-growth-draft",
-  "day_of_year": 312,
-  "zodiac_day": "Day12",
+  "day_of_year": 313,
+  "zodiac_day": "Day13",
   "zodiac_database": {
     "path": "data/all_zodiac_v1.json",
     "sign_count": 12,
@@ -40,8 +40,11 @@
     }
   },
   "latest_youtube": {
-    "status": "unavailable",
-    "reason": "HTTP Error 500: Internal Server Error"
+    "status": "ok",
+    "title": "Owala #lifeisbutadream #ladiesfashion #lady #amazingfacts #ai #cartoon #animation",
+    "video_id": "HGIuj36_T7w",
+    "published": "2026-11-02T06:04:57+00:00",
+    "url": "https://www.youtube.com/watch?v=HGIuj36_T7w"
   },
   "next_phase": [
     "connect approved content-source feeds for global discovery",
