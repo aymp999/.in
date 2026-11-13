@@ -1,17 +1,17 @@
 {
   "version": "1.0",
-  "generated_at": "2026-11-12T14:12:52.371828+05:30",
+  "generated_at": "2026-11-13T14:04:42.262552+05:30",
   "mode": "draft-only",
   "publish_allowed": false,
   "human_approval_required": true,
   "existing_content_read_only": true,
   "wallet_secrets_access": false,
   "external_llm_api": false,
-  "day_number": 16,
+  "day_number": 17,
   "items": [
     {
       "section": "Today’s Zodiac",
-      "idea": "Day 16: invite visitors to open the existing Daily Zodiac experience.",
+      "idea": "Day 17: invite visitors to open the existing Daily Zodiac experience.",
       "status": "DRAFT_ONLY",
       "publish": false
     },
@@ -35,7 +35,7 @@
     },
     {
       "section": "Latest Video",
-      "idea": "Highlight latest AYMP video: அரிய புலிப்பாணி ஆசீர்வாதம் ஜோதிடம், வாக்கபலிதம், ஆச்சார்யபீட ஆசீர்வாதம் #இன்றைய #ஜோதிடம் #நாள்.",
+      "idea": "Highlight latest AYMP video: தமிழக அரசியலின் வேகம் உலகளவில் பரவம்!?#global #trumb #Tvk #Dmk #vijay #todaywow #todaybest #todayvir.",
       "status": "DRAFT_ONLY",
       "publish": false
     },

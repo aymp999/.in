@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-12T14:12:52.371828+05:30",
+  "generated_at": "2026-11-13T14:04:42.262552+05:30",
   "timezone": "Asia/Kolkata",
   "engine_version": "1.1-growth-draft",
-  "day_of_year": 316,
-  "zodiac_day": "Day16",
+  "day_of_year": 317,
+  "zodiac_day": "Day17",
   "zodiac_database": {
     "path": "data/all_zodiac_v1.json",
     "sign_count": 12,
@@ -41,10 +41,10 @@
   },
   "latest_youtube": {
     "status": "ok",
-    "title": "அரிய புலிப்பாணி ஆசீர்வாதம் ஜோதிடம், வாக்கபலிதம், ஆச்சார்யபீட ஆசீர்வாதம் #இன்றைய #ஜோதிடம் #நாள்",
-    "video_id": "QqfB28PoI-8",
-    "published": "2026-11-10T04:09:15+00:00",
-    "url": "https://www.youtube.com/watch?v=QqfB28PoI-8"
+    "title": "தமிழக அரசியலின் வேகம் உலகளவில் பரவம்!?#global #trumb #Tvk #Dmk #vijay #todaywow #todaybest #todayvir",
+    "video_id": "xB-e-mEuIsw",
+    "published": "2026-11-13T03:32:10+00:00",
+    "url": "https://www.youtube.com/watch?v=xB-e-mEuIsw"
   },
   "next_phase": [
     "connect approved content-source feeds for global discovery",
