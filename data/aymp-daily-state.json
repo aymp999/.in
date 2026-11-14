@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-13T14:04:42.262552+05:30",
+  "generated_at": "2026-11-14T13:23:27.565323+05:30",
   "timezone": "Asia/Kolkata",
   "engine_version": "1.1-growth-draft",
-  "day_of_year": 317,
-  "zodiac_day": "Day17",
+  "day_of_year": 318,
+  "zodiac_day": "Day18",
   "zodiac_database": {
     "path": "data/all_zodiac_v1.json",
     "sign_count": 12,
@@ -40,11 +40,8 @@
     }
   },
   "latest_youtube": {
-    "status": "ok",
-    "title": "தமிழக அரசியலின் வேகம் உலகளவில் பரவம்!?#global #trumb #Tvk #Dmk #vijay #todaywow #todaybest #todayvir",
-    "video_id": "xB-e-mEuIsw",
-    "published": "2026-11-13T03:32:10+00:00",
-    "url": "https://www.youtube.com/watch?v=xB-e-mEuIsw"
+    "status": "unavailable",
+    "reason": "HTTP Error 404: Not Found"
   },
   "next_phase": [
     "connect approved content-source feeds for global discovery",
