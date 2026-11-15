@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-14T13:23:27.565323+05:30",
+  "generated_at": "2026-11-15T13:45:43.835228+05:30",
   "timezone": "Asia/Kolkata",
   "engine_version": "1.1-growth-draft",
-  "day_of_year": 318,
-  "zodiac_day": "Day18",
+  "day_of_year": 319,
+  "zodiac_day": "Day19",
   "zodiac_database": {
     "path": "data/all_zodiac_v1.json",
     "sign_count": 12,
@@ -40,8 +40,11 @@
     }
   },
   "latest_youtube": {
-    "status": "unavailable",
-    "reason": "HTTP Error 404: Not Found"
+    "status": "ok",
+    "title": "நகைதிருட்டு கண்டுபிடிப்பு #நகைதிருட்டு # மதுரை #தனிஷ்க் #மீனாட்சி #todaywow #todaybest #",
+    "video_id": "zkiB2xVJoiQ",
+    "published": "2026-11-15T04:57:45+00:00",
+    "url": "https://www.youtube.com/watch?v=zkiB2xVJoiQ"
   },
   "next_phase": [
     "connect approved content-source feeds for global discovery",
