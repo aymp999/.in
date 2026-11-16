@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-15T13:45:43.835228+05:30",
+  "generated_at": "2026-11-16T13:53:42.068053+05:30",
   "timezone": "Asia/Kolkata",
   "engine_version": "1.1-growth-draft",
-  "day_of_year": 319,
-  "zodiac_day": "Day19",
+  "day_of_year": 320,
+  "zodiac_day": "Day20",
   "zodiac_database": {
     "path": "data/all_zodiac_v1.json",
     "sign_count": 12,
@@ -41,10 +41,10 @@
   },
   "latest_youtube": {
     "status": "ok",
-    "title": "நகைதிருட்டு கண்டுபிடிப்பு #நகைதிருட்டு # மதுரை #தனிஷ்க் #மீனாட்சி #todaywow #todaybest #",
-    "video_id": "zkiB2xVJoiQ",
-    "published": "2026-11-15T04:57:45+00:00",
-    "url": "https://www.youtube.com/watch?v=zkiB2xVJoiQ"
+    "title": "ஏஐ க்கே ஆப்பு வச்சிருவாங்க போல #ஏஐ #Ai #trump #pichai #todaybest",
+    "video_id": "-_gfdUMcKE0",
+    "published": "2026-11-16T02:38:00+00:00",
+    "url": "https://www.youtube.com/watch?v=-_gfdUMcKE0"
   },
   "next_phase": [
     "connect approved content-source feeds for global discovery",
