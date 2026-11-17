@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-16T13:53:42.068053+05:30",
+  "generated_at": "2026-11-17T15:07:28.586481+05:30",
   "timezone": "Asia/Kolkata",
   "engine_version": "1.1-growth-draft",
-  "day_of_year": 320,
-  "zodiac_day": "Day20",
+  "day_of_year": 321,
+  "zodiac_day": "Day21",
   "zodiac_database": {
     "path": "data/all_zodiac_v1.json",
     "sign_count": 12,
@@ -41,10 +41,10 @@
   },
   "latest_youtube": {
     "status": "ok",
-    "title": "ஏஐ க்கே ஆப்பு வச்சிருவாங்க போல #ஏஐ #Ai #trump #pichai #todaybest",
-    "video_id": "-_gfdUMcKE0",
-    "published": "2026-11-16T02:38:00+00:00",
-    "url": "https://www.youtube.com/watch?v=-_gfdUMcKE0"
+    "title": "AI created horoscope #todaybest #astrology #todaywow #rasipalan #ihavethisthingwithplants #ai #ஜோ",
+    "video_id": "B-lZO3TyehQ",
+    "published": "2026-11-17T03:19:16+00:00",
+    "url": "https://www.youtube.com/watch?v=B-lZO3TyehQ"
   },
   "next_phase": [
     "connect approved content-source feeds for global discovery",
