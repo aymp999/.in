@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-17T15:07:28.586481+05:30",
+  "generated_at": "2026-11-18T14:26:41.900474+05:30",
   "timezone": "Asia/Kolkata",
   "engine_version": "1.1-growth-draft",
-  "day_of_year": 321,
-  "zodiac_day": "Day21",
+  "day_of_year": 322,
+  "zodiac_day": "Day22",
   "zodiac_database": {
     "path": "data/all_zodiac_v1.json",
     "sign_count": 12,
@@ -41,10 +41,10 @@
   },
   "latest_youtube": {
     "status": "ok",
-    "title": "AI created horoscope #todaybest #astrology #todaywow #rasipalan #ihavethisthingwithplants #ai #ஜோ",
-    "video_id": "B-lZO3TyehQ",
-    "published": "2026-11-17T03:19:16+00:00",
-    "url": "https://www.youtube.com/watch?v=B-lZO3TyehQ"
+    "title": "Baby songs#baby #kids #Ai #funny #songs #babysongs",
+    "video_id": "xkpymIcchsQ",
+    "published": "2026-11-17T13:28:29+00:00",
+    "url": "https://www.youtube.com/watch?v=xkpymIcchsQ"
   },
   "next_phase": [
     "connect approved content-source feeds for global discovery",
