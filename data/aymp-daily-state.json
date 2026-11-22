@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-21T14:08:39.790727+05:30",
+  "generated_at": "2026-11-22T14:05:44.452143+05:30",
   "timezone": "Asia/Kolkata",
   "engine_version": "1.1-growth-draft",
-  "day_of_year": 325,
-  "zodiac_day": "Day25",
+  "day_of_year": 326,
+  "zodiac_day": "Day26",
   "zodiac_database": {
     "path": "data/all_zodiac_v1.json",
     "sign_count": 12,
@@ -41,10 +41,10 @@
   },
   "latest_youtube": {
     "status": "ok",
-    "title": "Happy new year #todaybest #todaybest #todaywow #lifeisbutadream #youtubeshorts #v",
-    "video_id": "Dz9A4kq9tME",
-    "published": "2026-11-21T04:45:09+00:00",
-    "url": "https://www.youtube.com/watch?v=Dz9A4kq9tME"
+    "title": "@youtubecreators #todaybest #astrology #todaywow #Admk #eps",
+    "video_id": "bhMWje9Idmc",
+    "published": "2026-11-22T00:47:56+00:00",
+    "url": "https://www.youtube.com/watch?v=bhMWje9Idmc"
   },
   "next_phase": [
     "connect approved content-source feeds for global discovery",
