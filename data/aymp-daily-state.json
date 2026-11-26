@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-25T15:44:10.421814+05:30",
+  "generated_at": "2026-11-26T15:24:58.140102+05:30",
   "timezone": "Asia/Kolkata",
   "engine_version": "1.1-growth-draft",
-  "day_of_year": 329,
-  "zodiac_day": "Day29",
+  "day_of_year": 330,
+  "zodiac_day": "Day30",
   "zodiac_database": {
     "path": "data/all_zodiac_v1.json",
     "sign_count": 12,
@@ -41,10 +41,10 @@
   },
   "latest_youtube": {
     "status": "ok",
-    "title": "vijay #social #todaybest #tamil #todaywow #funny #trending",
-    "video_id": "2lt-ZvSAV4M",
-    "published": "2026-11-25T00:40:42+00:00",
-    "url": "https://www.youtube.com/watch?v=2lt-ZvSAV4M"
+    "title": "thiruvalluvar #Astrology #Remedy #Horoscope #Mantram #Trending #Viralvideo #tamil",
+    "video_id": "HUpSPtcbl-U",
+    "published": "2026-11-26T01:24:21+00:00",
+    "url": "https://www.youtube.com/watch?v=HUpSPtcbl-U"
   },
   "next_phase": [
     "connect approved content-source feeds for global discovery",
