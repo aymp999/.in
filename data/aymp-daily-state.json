@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-27T15:29:08.601450+05:30",
+  "generated_at": "2026-11-28T14:45:15.768905+05:30",
   "timezone": "Asia/Kolkata",
   "engine_version": "1.1-growth-draft",
-  "day_of_year": 331,
-  "zodiac_day": "Day31",
+  "day_of_year": 332,
+  "zodiac_day": "Day32",
   "zodiac_database": {
     "path": "data/all_zodiac_v1.json",
     "sign_count": 12,
@@ -41,10 +41,10 @@
   },
   "latest_youtube": {
     "status": "ok",
-    "title": "AYMP",
-    "video_id": "X6E5H6OL1Mw",
-    "published": "2026-11-27T02:39:44+00:00",
-    "url": "https://www.youtube.com/watch?v=X6E5H6OL1Mw"
+    "title": "mahalakshmi arul Live Stream",
+    "video_id": "VDCGQ-WHzjs",
+    "published": "2026-11-27T14:36:48+00:00",
+    "url": "https://www.youtube.com/watch?v=VDCGQ-WHzjs"
   },
   "next_phase": [
     "connect approved content-source feeds for global discovery",
